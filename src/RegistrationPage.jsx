@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import logo from './assets/PITAKA.png';
 
+
 function Registration() {
 
   const [username, setUsername] = useState('');
@@ -12,7 +13,7 @@ function Registration() {
   const [errorConfirmPassword, setErrorConfirmPassword] = useState(false);
   const [errorName, setErrorName] = useState(false);
   const [userList, setUserList] = useState([]);
-
+  
   // GET THE USERS
   const fetchData = async () => {
     const response = await fetch(`https://pitaka-react-project-backend.onrender.com/users`)
@@ -33,7 +34,7 @@ function Registration() {
   // HANDLE SUBMIT
   const handleSubmit = (e) => {
     e.preventDefault();
-
+    
     if (username === '') {
       setErrorUsername(true);
     } else {
@@ -80,6 +81,7 @@ function Registration() {
           .then((data) => {
             console.log(data);
             alert("Registration Successful!")
+            window.location.href = "/";
           })
           .catch((error) => {
             console.error(error);
