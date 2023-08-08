@@ -57,7 +57,7 @@ function ContextProvider({ children }) {
       const userID = localStorage.getItem('UserID');
       const newTransaction = { user: userID, title: title, amount: amount, date: date, category: category };
 
-
+      console.log("Income button clicked");
       settitle('');
       setamount('');
       setDate('');
@@ -72,11 +72,14 @@ function ContextProvider({ children }) {
         body: JSON.stringify(newTransaction),
       })
         .then(response => response.text())
-        .then(result => console.log(result))
+        .then(result => {
+          console.log(result);
+          window.location.reload(true); // Reload page after successful POST
+        })
         .catch(error => console.log(error));
 
     }
-    window.location.reload(true);
+    
   }
 
 
@@ -110,12 +113,15 @@ function ContextProvider({ children }) {
         body: JSON.stringify(newTransaction),
       })
         .then(response => response.text())
-        .then(result => console.log(result))
+        .then(result => {
+          console.log(result);
+          window.location.reload(true); // Reload page after successful POST
+        })
         .catch(error => console.log(error));
 
     }
 
-    window.location.reload(true);
+   
   }
   return (
     <Context.Provider value={{ title, settitle, amount, setamount, date, setDate, info, handleDataIncome, handleDataExpenses, remaining, setRemaining, income, setIncome, expenses, setExpenses }}>{children}
