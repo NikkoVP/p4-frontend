@@ -1,0 +1,238 @@
+:root {
+  text-align: center;
+  display: flexbox;
+  width: 100%;
+  
+}
+
+.balance-Add {
+  display: flexbox;
+  margin: 3vh;
+  
+}
+.balanceAndAdd{
+  display:flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.name{
+  text-align: left;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+  
+  width:80%;
+  margin-left: 12rem;
+  margin-right: 12rem;
+  font-size: 3rem;
+}
+.data-Homepage{
+  text-align: center;
+  margin-left: 6rem;
+  margin-right: 6rem;
+  /* margin-top: 1rem; */
+  
+}
+
+.balanceInfo-container {
+  
+  font-size: 2vw;
+  margin: 4vh;
+  margin-right: 20vh;
+  
+  align-items: center;
+}
+
+.AddTransaction-Container {
+  border: solid 1px;
+  border-radius: 10px;
+  display: inline-block;
+background-color: #212529;
+color: white;
+padding: 2rem;
+}
+
+.inputs {
+  padding-left: 10vh;
+  padding-right: 10vh;
+  padding-block: 1vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.AddTransactions-Button {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2vh;
+}
+
+.tableHeader {
+  background-color: #212529;
+  color: white;
+}
+
+.transaction-Container {
+
+  text-align: center;
+  margin-left: 12rem;
+  margin-right: 12rem;
+  margin-top: 3rem;
+  border: solid 2px;
+  border-radius: 10px;
+}
+
+.percentage-bar1 {
+  text-align: center;
+  height: 2vh;
+  width: 10;
+  background-color: blue;
+  /* border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px; */
+
+}
+
+.percentage-bar2 {
+  text-align: center;
+  height: 2vh;
+  width: 10;
+  background-color: red;
+  /* border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px; */
+
+}
+
+.percentage-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 100%;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+}
+
+.actions a {
+  cursor: pointer;
+}
+
+/* LOGIN PAGE */
+.loginpage{
+  display: inline-flex;
+  align-items: center;
+  background-color: #212529;
+  margin: 20rem;
+  margin-top: 5rem;
+  border-radius: 10px;
+}
+.loginForm{
+  display: block;
+  text-align: center;
+  align-items: center;
+  padding: 5rem;
+ margin-left: 5rem;
+ color: antiquewhite;
+ 
+}
+
+.registrationpage{
+  display: inline-flex;
+  align-items: center;
+  background-color: #212529;
+  margin: 20rem;
+  margin-top: 5rem;
+  border-radius: 10px;
+}
+.registrationForm{
+  display: block;
+  text-align: center;
+  align-items: center;
+  padding: 5rem;
+ margin-left: 5rem;
+ color: antiquewhite;
+ background-color: #212529;
+ width: 70%;
+ 
+}
+
+.registrationImage{
+  width: 20rem;
+  margin-left: 5rem;
+}
+.loginImage{
+  width: 20rem;
+  margin-left: 5rem;
+}
+
+.loginInputdiv{
+  padding: 2vh;
+}
+.loginInput{
+  width: 15rem;
+}
+
+.loginButtonDiv{
+  padding: 2vh;
+}
+
+.loginButton{
+  width: 12rem;
+  border-radius: 10px;
+}
+
+.loginLabelDiv{
+  font-size: 10px;
+}
+
+.errorLabel{
+  color: red;
+  font-size: 12px;
+}
+
+/* Media Query */
+@media screen and (max-width:820px) {
+  :root {
+    text-align: center;
+    display: flex;
+  }
+
+  .loginpage{
+    display: block;
+    align-items: left;
+  background-color: #212529;
+  border-radius: 10px;
+  justify-content: center;
+  }
+
+  .loginImage{
+   
+  }
+  .loginForm{
+    display: block;
+    text-align: center;
+    align-items: center;
+   color: antiquewhite;
+   
+  }
+  .balance-Add {
+    display: inline;
+    align-items: center;
+  }
+
+  .balanceInfo-container {
+    font-size: 30px;
+    padding: 0;
+  }
+
+  .transaction-Container {
+
+    text-align: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 3rem;
+    border: solid 2px;
+    border-radius: 10px;
+  }
+
+}
