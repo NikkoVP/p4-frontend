@@ -33,7 +33,7 @@ function Transactions(props) {
   // GET all data
   const fetchData = async () => {
     ;
-    const response = await fetch(`http://127.0.0.1:3000/transactions`)
+    const response = await fetch(`https://pitaka-react-project-backend.onrender.com/transactions`)
     const { data } = await response.json();
 
     setTransaction(data);
@@ -45,7 +45,7 @@ function Transactions(props) {
 
 
   const handleDelete = (id) => () => {
-    fetch(`http://127.0.0.1:3000/transactions/${id}`, {
+    fetch(`https://pitaka-react-project-backend.onrender.com/transactions/${id}`, {
       method: 'DELETE',
     })
       .then((response) => response.text())

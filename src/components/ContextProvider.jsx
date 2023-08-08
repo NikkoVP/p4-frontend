@@ -16,7 +16,7 @@ function ContextProvider({ children }) {
   useEffect(() => {
     if (localStorage.getItem("UserID") !== null) {
       const user = localStorage.getItem('UserID');
-      fetch(`http://127.0.0.1:3000/transactions/income/${user}`)
+      fetch(`https://pitaka-react-project-backend.onrender.com/transactions/income/${user}`)
         .then((response) => response.json())
         .then((data) => {
           setIncome(data.totalAmount);
@@ -31,7 +31,7 @@ function ContextProvider({ children }) {
   useEffect(() => {
     if (localStorage.getItem("UserID") !== null) {
       const user = localStorage.getItem('UserID');
-      fetch(`http://127.0.0.1:3000/transactions/expenses/${user}`)
+      fetch(`https://pitaka-react-project-backend.onrender.com/transactions/expenses/${user}`)
         .then((response) => response.json())
         .then((data) => {
           setExpenses(data.totalAmount);
@@ -64,7 +64,7 @@ function ContextProvider({ children }) {
       e.preventDefault();
 
       // FOR STORING INCOME DATA TO DATABASE
-      fetch(`http://127.0.0.1:3000/transactions`, {
+      fetch(`https://pitaka-react-project-backend.onrender.com/transactions`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -102,7 +102,7 @@ function ContextProvider({ children }) {
       e.preventDefault();
 
       // FOR STORING Expenses DATA TO DATABASE
-      fetch('http://127.0.0.1:3000/transactions', {
+      fetch('https://pitaka-react-project-backend.onrender.com/transactions', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
