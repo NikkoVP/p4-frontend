@@ -17,19 +17,19 @@ function App() {
       element: <Login></Login>
     },
     {
-      path: 'https://pitaka-react-project.onrender.com//Homepage',
+      path: 'https://pitaka-react-project.onrender.com/Homepage',
       element: <Homepage></Homepage>
     },
     {
-      path: 'https://pitaka-react-project.onrender.com//HistoryPage',
+      path: 'https://pitaka-react-project.onrender.com/HistoryPage',
       element: <HistoryPage> </HistoryPage>
     },
     {
-      path: 'https://pitaka-react-project.onrender.com//RegistrationPage',
+      path: 'https://pitaka-react-project.onrender.com/RegistrationPage',
       element:<Registration></Registration>
     },
     {
-      path: 'https://pitaka-react-project.onrender.com//Account',
+      path: 'https://pitaka-react-project.onrender.com/Account',
       element:<Account></Account>
     }  
 
