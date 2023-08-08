@@ -15,7 +15,7 @@ function Registration() {
 
   // GET THE USERS
   const fetchData = async () => {
-    const response = await fetch(`http://127.0.0.1:3000/users`)
+    const response = await fetch(`https://pitaka-react-project-backend.onrender.com/users`)
     const { data } = await response.json();
     setUserList(data)
   };
@@ -69,7 +69,7 @@ function Registration() {
       console.log(user)
       if (user.length === 0) {
 
-        fetch('http://127.0.0.1:3000/registration', {
+        fetch('https://pitaka-react-project-backend.onrender.com/registration', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
